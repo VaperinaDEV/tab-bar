@@ -29,7 +29,7 @@ html:not(.anon) {
   padding-bottom: env(safe-area-inset-bottom); // for devices with a notch (iPhone X*)
 
   .tab {
-    color: var(--primary-medium, $primary-medium);
+    color: var(--secondary-low, $secondary-low);
     height: 100%;
     display: flex;
     align-items: center;
