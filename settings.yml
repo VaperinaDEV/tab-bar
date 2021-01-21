@@ -17,7 +17,7 @@ tab_2_settings:
   default: "Portfólióm, layer-group, /my/activity/portfolio"
 
 tab_3_settings:
-  default: "Új téma, plus-square, https://vaperina.cc/new-topic"
+  default: "Új téma, plus-square, /new-topic"
 
 tab_4_settings:
   default: "Üzenetek, envelope, userPrivateMessages"
