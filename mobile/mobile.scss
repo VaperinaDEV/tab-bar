@@ -19,7 +19,7 @@ html:not(.anon) {
 }
 
 .d-tab-bar-theme {
-  background-color: var(--header_background, $header_background);
+  background-color: var(--header_background);
   width: 100%;
   height: $bar-height;
   position: fixed;
@@ -29,7 +29,7 @@ html:not(.anon) {
   padding-bottom: env(safe-area-inset-bottom); // for devices with a notch (iPhone X*)
 
   .tab {
-    color: var(--secondary-low, $secondary-low);
+    color: var(--secondary-low);
     height: 100%;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ html:not(.anon) {
     float: left;
 
     &.active {
-      color: var(--tertiary, $tertiary);
+      color: var(--tertiary);
     }
 
     p.title {
