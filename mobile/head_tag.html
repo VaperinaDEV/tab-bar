@@ -159,3 +159,19 @@
     </a>
   {{/each}}
 </script>
+
+<script type="text/discourse-plugin" version="0.8.18">
+  $(document).ready(function() {
+    var lastScrollTop = 0;
+    
+    window.addEventListener("scroll", function(){  
+      var st = window.pageYOffset || document.documentElement.scrollTop;  
+        if (st > lastScrollTop){
+          document.getElementsByClassName('d-tab-bar-theme').style.bottom = "-100%";
+        } else {
+        document.getElementsByClassName('d-tab-bar-theme').style.bottom = "0";
+      }
+      lastScrollTop = st;
+    }, false);
+  });
+</script>
