@@ -159,3 +159,23 @@
     </a>
   {{/each}}
 </script>
+
+<script type="text/discourse-plugin" version="0.8.18">
+   $(document).ready(function() {
+        var lastScrollTop = 0;
+        var body = $("body");
+        $(window).scroll(function() {
+            var scroll = $(this).scrollTop();
+
+            if (lastScrollTop < scroll && !body.hasClass("scrolled-down")) {
+                body.addClass("scrolled-down");
+                body.removeClass("scrolled-up");
+
+            } else if (lastScrollTop > scroll && body.hasClass("scrolled-down")) {
+                body.removeClass("scrolled-down");
+                body.addClass("scrolled-up");
+            }
+            lastScrollTop = scroll;
+        });
+    });
+</script>
