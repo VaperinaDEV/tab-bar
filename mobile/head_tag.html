@@ -167,13 +167,13 @@
         $(window).scroll(function() {
             var scroll = $(this).scrollTop();
 
-            if (lastScrollTop < scroll && !body.hasClass("scrolled-down-tab")) {
-                body.addClass("scrolled-down-tab");
-                body.removeClass("scrolled-up-tab");
+            if (lastScrollTop < scroll && !body.hasClass("tab-bar-hide")) {
+                body.addClass("tab-bar-hide");
+                body.removeClass("tab-bar-show");
 
-            } else if (lastScrollTop > scroll && body.hasClass("scrolled-down-tab")) {
-                body.removeClass("scrolled-down-tab");
-                body.addClass("scrolled-up-tab");
+            } else if (lastScrollTop > scroll && body.hasClass("tab-bar-hide")) {
+                body.removeClass("tab-bar-hide");
+                body.addClass("tab-bar-show");
             }
             lastScrollTop = scroll;
         });
