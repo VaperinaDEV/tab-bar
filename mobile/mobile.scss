@@ -49,3 +49,30 @@ html:not(.anon) {
     }
   }
 }
+
+.scrolled-down {
+  .d-tab-bar-theme {
+    bottom: -100%;
+    transition: 1s ease-in-out;
+  }
+  #topic-progress-wrapper:not(.docked),
+  .d-toc-toggle {
+    bottom: 0 !important;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.scrolled-up {
+  .d-tab-bar-theme {
+    bottom: 0;
+    transition: 0.25s ease-in-out;
+  }
+  #topic-progress-wrapper:not(.docked),
+  .d-toc-toggle {
+    transition: 0.25s ease-in-out;
+  }
+}
+
+body:not(.footer-nav-ipad) .footer-nav {
+  display: none;
+}
