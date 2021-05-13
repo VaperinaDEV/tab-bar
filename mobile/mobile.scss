@@ -69,7 +69,6 @@ html:not(.anon) {
   }
   #topic-progress-wrapper:not(.docked),
   .d-toc-toggle {
-    bottom: $bar-height !important;
     transition: 0.25s ease-in-out;
   }
 }
