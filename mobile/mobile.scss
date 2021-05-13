@@ -53,12 +53,12 @@ html:not(.anon) {
 .scrolled-down {
   .d-tab-bar-theme {
     bottom: -$bar-height;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   #topic-progress-wrapper:not(.docked),
   .d-toc-toggle {
     bottom: 0 !important;
-    transition: 0.25s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 }
 
