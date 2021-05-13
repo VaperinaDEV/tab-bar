@@ -52,7 +52,7 @@ html:not(.anon) {
 
 .scrolled-down {
   .d-tab-bar-theme {
-    bottom: -100%;
+    bottom: -$bar-height;
     transition: 1s ease-in-out;
   }
   #topic-progress-wrapper:not(.docked),
