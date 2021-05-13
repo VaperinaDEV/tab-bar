@@ -50,7 +50,7 @@ html:not(.anon) {
   }
 }
 
-.scrolled-down {
+.scrolled-down-tab {
   .d-tab-bar-theme {
     bottom: -$bar-height;
     transition: 0.5s ease-in-out;
@@ -62,7 +62,7 @@ html:not(.anon) {
   }
 }
 
-.scrolled-up {
+.scrolled-up-tab {
   .d-tab-bar-theme {
     bottom: 0;
     transition: 0.25s ease-in-out;
