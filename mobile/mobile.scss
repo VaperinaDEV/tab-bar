@@ -50,26 +50,26 @@ html:not(.anon) {
   }
 }
 
-.scrolled-down-tab {
+.tab-bar-hide {
   .d-tab-bar-theme {
     bottom: -$bar-height;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-out;
   }
   #topic-progress-wrapper:not(.docked),
   .d-toc-toggle {
     bottom: 0 !important;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-out;
   }
 }
 
-.scrolled-up-tab {
+.tab-bar-show {
   .d-tab-bar-theme {
     bottom: 0;
-    transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in;
   }
   #topic-progress-wrapper:not(.docked),
   .d-toc-toggle {
-    transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in;
   }
 }
 
